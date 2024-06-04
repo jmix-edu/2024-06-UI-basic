@@ -36,6 +36,7 @@
             <button id="createBtn" action="projectsDataGrid.create"/>
             <button id="editBtn" action="projectsDataGrid.edit"/>
             <button id="removeBtn" action="projectsDataGrid.remove"/>
+            <button id="showTasksDialogBtn" action="projectsDataGrid.showTasksDialog"/>
             <simplePagination id="pagination" dataLoader="projectsDl"/>
         </hbox>
         <dataGrid id="projectsDataGrid"
@@ -47,6 +48,8 @@
                 <action id="create" type="list_create"/>
                 <action id="edit" type="list_edit"/>
                 <action id="remove" type="list_remove"/>
+                <action id="showTasksDialog" text="msg://showTasksDialog.text"
+                        icon="LIST" type="list_itemTracking"/>
             </actions>
             <columns resizable="true">
                 <column property="name"/>
